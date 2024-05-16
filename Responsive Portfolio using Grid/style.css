@@ -19,6 +19,12 @@ main {
   grid-template-columns: 1fr;
 }
 
+.panel.text {
+  background-color: #eeeeeee7;
+  color: rgb(59, 58, 58);
+  padding: 30px 60px;
+}
+
 /* welcome panel */
 .panel.welcome {
   background-color: #36454f;
@@ -30,7 +36,7 @@ main {
   text-decoration: none;
   color: #faf9f6;
   font-weight: 500;
-  margin-right: 12px;
+  margin-right: 14px;
 }
 
 .panel.welcome h2 {
@@ -40,7 +46,7 @@ main {
 }
 
 .panel.welcome h2 span {
-  font-size: 35px;
+  font-size: 26px;
   color: tomato;
   font-family: "Freeman", sans-serif;
   text-shadow: 2px 1px 3px black;
@@ -53,8 +59,36 @@ main {
 .panel.welcome footer svg {
   width: 28px;
   height: 28px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
-/* welcome panel */
 
-/* welcome panel */
+/* about panel */
+.panel.about {
+  grid-template-rows: 2fr 1fr;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.panel.about img {
+  width: 100%;
+  height: 100%;
+}
+
+/* photos panel */
+.panel.photo {
+  grid-template-rows: 1.2fr 3fr;
+  overflow: hidden;
+}
+
+.panel.photo.text {
+  background-color: #eeeeeee7;
+  color: rgb(59, 58, 58);
+  padding: 30px 60px;
+}
+
+.panel.photo img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
