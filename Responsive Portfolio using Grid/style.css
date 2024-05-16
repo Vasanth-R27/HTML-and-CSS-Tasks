@@ -11,18 +11,12 @@
 main {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .panel {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.panel.text {
-  background-color: #eeeeeee7;
-  color: rgb(59, 58, 58);
-  padding: 30px 60px;
 }
 
 /* welcome panel */
@@ -42,11 +36,11 @@ main {
 .panel.welcome h2 {
   color: #faf9f6;
   max-width: 540px;
-  font-size: 30px;
+  font-size: 34px;
 }
 
 .panel.welcome h2 span {
-  font-size: 26px;
+  font-size: 36px;
   color: tomato;
   font-family: "Freeman", sans-serif;
   text-shadow: 2px 1px 3px black;
@@ -75,16 +69,36 @@ main {
   height: 100%;
 }
 
+.panel.about h4 {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.panel.about div {
+  background-color: #eeeeeee7;
+  color: rgb(59, 58, 58);
+  padding: 30px 60px;
+  font-size: 12px;
+}
+
 /* photos panel */
 .panel.photo {
   grid-template-rows: 1.2fr 3fr;
   overflow: hidden;
 }
 
-.panel.photo.text {
+.panel.photo h4 {
+  font-size: 18px;
+  color: black;
+  padding-bottom: 6px;
+}
+
+.panel.photo div {
   background-color: #eeeeeee7;
   color: rgb(59, 58, 58);
   padding: 30px 60px;
+  font-size: 12px;
 }
 
 .panel.photo img {
